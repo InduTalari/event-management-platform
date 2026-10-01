@@ -10,7 +10,11 @@ import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://event-management-platform-1-anj3.onrender.com",
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
