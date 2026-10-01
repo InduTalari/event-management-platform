@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:5000/api";
+const API = "https://event-management-platform-efb5.onrender.com/api";
 
 function MyRegistrations() {
   const [registrations, setRegistrations] = useState([]);

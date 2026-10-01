@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 
-const API = "http://localhost:5000/api";
+const API = "https://event-management-platform-efb5.onrender.com/api";
 
 function UpcomingEvents() {
   const [events, setEvents] = useState([]);

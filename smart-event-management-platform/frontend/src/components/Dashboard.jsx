@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import EventCard from "./EventCard";
 
-const API = "http://localhost:5000/api";
+const API = "https://event-management-platform-efb5.onrender.com/api";
 
 function Dashboard() {
   const user = JSON.parse(localStorage.getItem("user") || "null");

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://event-management-platform-efb5.onrender.com/api";
 
 function AdminDashboard() {
   const [stats, setStats] = useState(null);

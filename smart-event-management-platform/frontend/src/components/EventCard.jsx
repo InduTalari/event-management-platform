@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://event-management-platform-efb5.onrender.com/api";
 
 function EventCard({ event, onRegister }) {
   const token = localStorage.getItem("token");
